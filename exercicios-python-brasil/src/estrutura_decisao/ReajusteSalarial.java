@@ -13,7 +13,7 @@ public class ReajusteSalarial {
 		 * salários de R$ 1500,00 em diante : aumento de 5% Após o aumento ser realizado, informe na tela:
 		 * o salário antes do reajuste;
 		 * o percentual de aumento aplicado;
-		 * o valor do aumento;
+		 * valor do aumento;
 		 * o novo salário, após o aumento.
 		 */
 		
