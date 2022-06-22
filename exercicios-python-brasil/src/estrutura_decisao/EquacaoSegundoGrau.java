@@ -35,13 +35,13 @@ public class EquacaoSegundoGrau {
 			if (delta > 0) {
 				System.out.println(String.format("O valor de delta é igual a %.2f.", delta));
 				raizUm = ((-1) * b + Math.sqrt(delta)) / (2 * a);
-                raizDois = ((-1) * b - Math.sqrt(delta)) / (2 * a);
+				raizDois = ((-1) * b - Math.sqrt(delta)) / (2 * a);
                 System.out.printf("Raízes: %.2f e %.2f", raizUm, raizDois);
 			} else if (delta == 0) {
 				System.out.println(String.format("O valor de delta é igual a %d.", (int) delta));
 				System.out.println("A equação possui apenas uma raiz real");
 				raizUm = ((-1) * b + Math.sqrt(delta)) / (2 * a);
-                raizDois = ((-1) * b - Math.sqrt(delta)) / (2 * a);
+				raizDois = ((-1) * b - Math.sqrt(delta)) / (2 * a);
                 System.out.printf("Raiz igual a: %.2f", raizUm);
 			} else {
 				System.out.println(String.format("O valor de delta é igual a %.2f.", delta));

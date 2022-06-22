@@ -7,7 +7,6 @@ public class AnoBissexto {
 		// Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto.
 		
 		Scanner input = new Scanner(System.in);
-		
 		int ano;
         
         System.out.println("Digite um ano para saber se é bissexto");
@@ -21,6 +20,6 @@ public class AnoBissexto {
             System.out.println(String.format("O ano de %d não é um ano bissexto", ano));
         }
 		
-		input.close();
+        input.close();
 	}
 }
