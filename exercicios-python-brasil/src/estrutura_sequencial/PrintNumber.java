@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class PrintNumber {
 	public static void main(String[] args) {
 		// Faça um Programa que peça um número e então mostre a mensagem O número informado foi [número].
+		
 		Scanner input = new Scanner(System.in);
 		
 		double number;

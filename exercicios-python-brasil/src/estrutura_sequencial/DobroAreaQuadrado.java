@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class DobroAreaQuadrado {
 	public static void main(String[] args) {
 		// Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro desta área para o usuário.
+		
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Digite o valor do lado do quadrado: ");

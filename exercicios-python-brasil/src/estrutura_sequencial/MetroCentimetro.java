@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class MetroCentimetro {
 	public static void main(String[] args) {
 		// Faça um Programa que converta metros para centímetros.
+		
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Digite a medida em metros: ");
