@@ -15,7 +15,42 @@ public class EquacaoSegundoGrau {
 		
 		Scanner input = new Scanner(System.in);
 		
+		double a, b, c, delta, raizUm, raizDois;
 		
+		System.out.println("Vamos fazer o cálculo de uma equação de segundo grau!"
+				+ "\nPrimeiro vamos lembrar a sua estrutura:"
+				+ "\nax² + bx + c"
+				+ "\nAgora você me passará os valores de 'a', 'b' e 'c'."
+				+ "\nDigite primairamente o valor de 'a':");
+		a = input.nextDouble();
+		if (a != 0) {
+			System.out.println("Digite o valor de 'b': ");
+			b = input.nextDouble();
+			
+			System.out.println("Digite o valor de 'c': ");
+			c = input.nextDouble();
+			
+			delta = Math.pow(b, 2) - (4 * a * c);
+			
+			if (delta > 0) {
+				System.out.println(String.format("O valor de delta é igual a %.2f.", delta));
+				raizUm = ((-1) * b + Math.sqrt(delta)) / (2 * a);
+                raizDois = ((-1) * b - Math.sqrt(delta)) / (2 * a);
+                System.out.printf("Raízes: %.2f e %.2f", raizUm, raizDois);
+			} else if (delta == 0) {
+				System.out.println(String.format("O valor de delta é igual a %d.", (int) delta));
+				System.out.println("A equação possui apenas uma raiz real");
+				raizUm = ((-1) * b + Math.sqrt(delta)) / (2 * a);
+                raizDois = ((-1) * b - Math.sqrt(delta)) / (2 * a);
+                System.out.printf("Raiz igual a: %.2f", raizUm);
+			} else {
+				System.out.println(String.format("O valor de delta é igual a %.2f.", delta));
+				System.out.println("A equação não possui raízes reais.");
+			}
+			
+		} else {
+			System.out.println("A equação não é do segundo grau. Execute o programa novamente e tente outros valores.");
+		}
 		
 		input.close();
 	}
